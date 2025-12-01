@@ -276,6 +276,7 @@ ServiceFabricBackup/
 ## ==============================
 ## JetBrains IDEs (Rider, IntelliJ, etc.)
 ## ==============================
+.idea/
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/**/usage.statistics.xml
@@ -322,4 +323,4 @@ Desktop.ini
 # Linux
 *~
 
- .idea/
+
