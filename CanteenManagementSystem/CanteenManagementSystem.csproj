@@ -46,6 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="src\logic\models\Admin.cs" />
+    <Compile Include="src\logic\models\Cashier.cs" />
+    <Compile Include="src\logic\models\InventoryClerk.cs" />
+    <Compile Include="src\logic\models\Person.cs" />
+    <Compile Include="src\logic\models\User.cs" />
     <Compile Include="src\ui\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,7 +87,6 @@
   <ItemGroup>
     <Folder Include="docs\" />
     <Folder Include="src\data\" />
-    <Folder Include="src\logic\" />
     <Folder Include="tests\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
