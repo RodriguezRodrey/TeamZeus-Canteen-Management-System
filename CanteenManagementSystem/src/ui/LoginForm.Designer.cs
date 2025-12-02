@@ -46,7 +46,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Pink;
+            this.panel1.BackColor = System.Drawing.Color.LightPink;
             this.panel1.Controls.Add(this.x);
             this.panel1.Controls.Add(this.loginbttn);
             this.panel1.Controls.Add(this.frgtpass);
