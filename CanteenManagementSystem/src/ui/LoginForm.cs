@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CanteenManagementSystem.src.ui;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -45,6 +46,14 @@ namespace CanteenManagementSystem
         private void login_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void loginbttn_Click(object sender, EventArgs e)
+        {
+            dashboard dashboard = new dashboard();
+            dashboard.Show();
+
+            this.Hide();
         }
     }
 }
