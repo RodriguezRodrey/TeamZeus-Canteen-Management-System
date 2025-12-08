@@ -1,18 +1,30 @@
+using CanteenManagementSystem.logic.enums;
+
 namespace CanteenManagementSystem.logic.models
 {
-    public abstract class User : Person
+    public abstract class User
     {
-        public string Username { get; protected set; }
-        public string Password { get; protected set; }
-        public string Role { get; protected set; }
+        protected int UserId { get; set; }
+        protected string Username { get; set; }        
+        protected string Password { get; set; }
+        protected string FirstName { get; set; }
+        protected string LastName { get; set; }
+        protected string Email { get; set; }
+        protected string PhoneNumber { get; set; }
+        protected string Address { get; set; }
+        protected UserRole Role { get; set; }
         
-        protected User(int userId, string firstName, string lastName,
-            string email, string phoneNumber, string address,
-            string username, string password, string role)
-            : base(userId, firstName, lastName, email, phoneNumber, address)
+        protected User(int userId, string username, string firstName, string lastName,
+            string email, string password,string phoneNumber, string address, UserRole role)
         {
+            UserId = userId;
             Username = username;
+            FirstName = firstName;
+            LastName = lastName;
+            Email = email;
             Password = password;
+            PhoneNumber = phoneNumber;
+            Address = address;
             Role = role;
         }
         
@@ -23,7 +35,7 @@ namespace CanteenManagementSystem.logic.models
 
         public virtual bool Logout() => true;
 
-        public void UpdateProfile(string firstName, string lastName,
+        protected void UpdateProfile(string firstName, string lastName,
             string email, string phoneNumber, string address)
         {
             FirstName = firstName;
@@ -32,5 +44,10 @@ namespace CanteenManagementSystem.logic.models
             PhoneNumber = phoneNumber;
             Address = address;
         }
+        
+        public string GetFullName()
+        {
+            return $"{LastName}, {FirstName} ";
+        }
     }
-}
+}    
