@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.x = new System.Windows.Forms.Label();
             this.loginbttn = new System.Windows.Forms.Button();
-            this.frgtpass = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.passwrd = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -41,10 +41,10 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -53,7 +53,6 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.x);
             this.panel1.Controls.Add(this.loginbttn);
-            this.panel1.Controls.Add(this.frgtpass);
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.passwrd);
             this.panel1.Controls.Add(this.textBox1);
@@ -65,6 +64,16 @@
             this.panel1.Size = new System.Drawing.Size(636, 406);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(450, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(93, 72);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
             // 
             // x
             // 
@@ -89,17 +98,6 @@
             this.loginbttn.UseVisualStyleBackColor = false;
             this.loginbttn.Click += new System.EventHandler(this.loginbttn_Click);
             // 
-            // frgtpass
-            // 
-            this.frgtpass.AutoSize = true;
-            this.frgtpass.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.frgtpass.Location = new System.Drawing.Point(446, 266);
-            this.frgtpass.Name = "frgtpass";
-            this.frgtpass.Size = new System.Drawing.Size(97, 12);
-            this.frgtpass.TabIndex = 6;
-            this.frgtpass.Text = "Forgot Password?";
-            this.frgtpass.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(397, 228);
@@ -113,6 +111,7 @@
             this.passwrd.AutoSize = true;
             this.passwrd.BackColor = System.Drawing.Color.Firebrick;
             this.passwrd.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwrd.ForeColor = System.Drawing.Color.White;
             this.passwrd.Location = new System.Drawing.Point(394, 209);
             this.passwrd.Name = "passwrd";
             this.passwrd.Size = new System.Drawing.Size(53, 15);
@@ -132,6 +131,7 @@
             // 
             this.userid.AutoSize = true;
             this.userid.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userid.ForeColor = System.Drawing.Color.White;
             this.userid.Location = new System.Drawing.Point(394, 130);
             this.userid.Name = "userid";
             this.userid.Size = new System.Drawing.Size(42, 15);
@@ -142,7 +142,7 @@
             // 
             this.logtxt.AutoSize = true;
             this.logtxt.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logtxt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.logtxt.ForeColor = System.Drawing.Color.White;
             this.logtxt.Location = new System.Drawing.Point(466, 96);
             this.logtxt.Name = "logtxt";
             this.logtxt.Size = new System.Drawing.Size(59, 24);
@@ -158,6 +158,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(361, 406);
             this.panel2.TabIndex = 0;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label2
             // 
@@ -179,16 +180,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Hello,";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(450, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(93, 72);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
-            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -203,9 +194,9 @@
             this.Text = "Login";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -219,12 +210,12 @@
         private System.Windows.Forms.Label userid;
         private System.Windows.Forms.Label logtxt;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label frgtpass;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label passwrd;
         private System.Windows.Forms.Button loginbttn;
         private System.Windows.Forms.Label x;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 

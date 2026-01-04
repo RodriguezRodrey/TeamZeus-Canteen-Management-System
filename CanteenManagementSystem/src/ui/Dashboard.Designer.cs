@@ -28,14 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dashboard));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
             this.mychart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel18 = new System.Windows.Forms.Panel();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -43,6 +60,9 @@
             this.panel19 = new System.Windows.Forms.Panel();
             this.expnseslbl = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -62,47 +82,29 @@
             this.panel11 = new System.Windows.Forms.Panel();
             this.dshboardtxt = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnlogout = new System.Windows.Forms.Button();
+            this.btnusermanagement = new System.Windows.Forms.Button();
+            this.btnsupplier = new System.Windows.Forms.Button();
+            this.btninventory = new System.Windows.Forms.Button();
+            this.btnpos = new System.Windows.Forms.Button();
+            this.btnDashboard = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.admintxt = new System.Windows.Forms.Label();
             this.wlcmtxt = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.btnDashboard = new System.Windows.Forms.Button();
-            this.btnpos = new System.Windows.Forms.Button();
-            this.btninventory = new System.Windows.Forms.Button();
-            this.btnsupplier = new System.Windows.Forms.Button();
-            this.btnusermanagement = new System.Windows.Forms.Button();
-            this.btnlogout = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mychart)).BeginInit();
             this.panel18.SuspendLayout();
             this.panel19.SuspendLayout();
@@ -112,19 +114,17 @@
             this.panel13.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            this.panel6.SuspendLayout();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -144,31 +144,170 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Controls.Add(this.label30);
+            this.panel6.Controls.Add(this.label29);
+            this.panel6.Controls.Add(this.label28);
+            this.panel6.Controls.Add(this.label27);
+            this.panel6.Controls.Add(this.label26);
+            this.panel6.Controls.Add(this.label25);
+            this.panel6.Controls.Add(this.label21);
+            this.panel6.Controls.Add(this.label11);
+            this.panel6.Controls.Add(this.label10);
+            this.panel6.Controls.Add(this.label9);
+            this.panel6.Controls.Add(this.panel7);
+            this.panel6.Location = new System.Drawing.Point(863, 422);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(296, 255);
+            this.panel6.TabIndex = 8;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Myanmar Text", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(202, 134);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(15, 20);
+            this.label30.TabIndex = 10;
+            this.label30.Text = "4";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Myanmar Text", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(202, 114);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(15, 20);
+            this.label29.TabIndex = 9;
+            this.label29.Text = "2";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Myanmar Text", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(202, 95);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(15, 20);
+            this.label28.TabIndex = 8;
+            this.label28.Text = "6";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Myanmar Text", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(202, 75);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(15, 20);
+            this.label27.TabIndex = 7;
+            this.label27.Text = "3";
+            this.label27.Click += new System.EventHandler(this.label27_Click);
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Myanmar Text", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(18, 134);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(48, 20);
+            this.label26.TabIndex = 6;
+            this.label26.Text = "Biscuits";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Myanmar Text", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(18, 114);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(74, 20);
+            this.label25.TabIndex = 5;
+            this.label25.Text = "Water Bottle";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Myanmar Text", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(18, 95);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(39, 20);
+            this.label21.TabIndex = 4;
+            this.label21.Text = "Bread";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Myanmar Text", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(18, 75);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(35, 20);
+            this.label11.TabIndex = 3;
+            this.label11.Text = "Coke";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Myanmar Text", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(185, 55);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(57, 20);
+            this.label10.TabIndex = 2;
+            this.label10.Text = "Quantity:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Myanmar Text", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(18, 55);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(58, 20);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "Products:";
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Firebrick;
+            this.panel7.Controls.Add(this.label12);
+            this.panel7.Location = new System.Drawing.Point(0, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(296, 38);
+            this.panel7.TabIndex = 0;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Myanmar Text", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(18, 9);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(106, 20);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "LOW STOCK ITEMS";
+            // 
             // mychart
             // 
-            chartArea2.BackColor = System.Drawing.SystemColors.Control;
-            chartArea2.BackSecondaryColor = System.Drawing.Color.White;
-            chartArea2.Name = "ChartArea1";
-            this.mychart.ChartAreas.Add(chartArea2);
-            legend2.BackColor = System.Drawing.Color.White;
-            legend2.Name = "Legend1";
-            this.mychart.Legends.Add(legend2);
+            chartArea1.BackColor = System.Drawing.SystemColors.Control;
+            chartArea1.BackSecondaryColor = System.Drawing.Color.White;
+            chartArea1.Name = "ChartArea1";
+            this.mychart.ChartAreas.Add(chartArea1);
+            legend1.BackColor = System.Drawing.Color.White;
+            legend1.Name = "Legend1";
+            this.mychart.Legends.Add(legend1);
             this.mychart.Location = new System.Drawing.Point(561, 151);
             this.mychart.Name = "mychart";
             this.mychart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
             this.mychart.PaletteCustomColors = new System.Drawing.Color[] {
         System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))))};
-            series3.ChartArea = "ChartArea1";
-            series3.Color = System.Drawing.Color.SteelBlue;
-            series3.Legend = "Legend1";
-            series3.Name = "Sale";
-            series4.BackImage = "C:\\Users\\myyyw\\OneDrive\\Desktop\\Screenshot 2025-12-02 222358.png";
-            series4.ChartArea = "ChartArea1";
-            series4.Color = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            series4.Legend = "Legend1";
-            series4.Name = "Purchases";
-            this.mychart.Series.Add(series3);
-            this.mychart.Series.Add(series4);
+            series1.ChartArea = "ChartArea1";
+            series1.Color = System.Drawing.Color.SteelBlue;
+            series1.Legend = "Legend1";
+            series1.Name = "Sale";
+            series2.BackImage = "C:\\Users\\myyyw\\OneDrive\\Desktop\\Screenshot 2025-12-02 222358.png";
+            series2.ChartArea = "ChartArea1";
+            series2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            series2.Legend = "Legend1";
+            series2.Name = "Purchases";
+            this.mychart.Series.Add(series1);
+            this.mychart.Series.Add(series2);
             this.mychart.Size = new System.Drawing.Size(598, 255);
             this.mychart.TabIndex = 7;
             this.mychart.Text = "chrt";
@@ -190,6 +329,46 @@
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(296, 255);
             this.panel18.TabIndex = 6;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(157, 121);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(13, 13);
+            this.label13.TabIndex = 12;
+            this.label13.Text = "0";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(157, 83);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(13, 13);
+            this.label14.TabIndex = 11;
+            this.label14.Text = "0";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(157, 103);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(13, 13);
+            this.label15.TabIndex = 10;
+            this.label15.Text = "0";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(157, 63);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(13, 13);
+            this.label16.TabIndex = 9;
+            this.label16.Text = "0";
             // 
             // label5
             // 
@@ -264,6 +443,36 @@
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(296, 255);
             this.panel14.TabIndex = 4;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(145, 82);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(13, 13);
+            this.label22.TabIndex = 11;
+            this.label22.Text = "0";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(145, 102);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(13, 13);
+            this.label23.TabIndex = 10;
+            this.label23.Text = "0";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(145, 62);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(13, 13);
+            this.label24.TabIndex = 9;
+            this.label24.Text = "0";
             // 
             // label6
             // 
@@ -472,6 +681,181 @@
             this.panel3.TabIndex = 1;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint_1);
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(12, 436);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(41, 33);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 12;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(12, 391);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(41, 33);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 11;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(12, 346);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(41, 33);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 10;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(12, 301);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(41, 33);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 9;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(12, 256);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(41, 33);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
+            // 
+            // btnlogout
+            // 
+            this.btnlogout.BackColor = System.Drawing.Color.Firebrick;
+            this.btnlogout.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnlogout.FlatAppearance.BorderSize = 0;
+            this.btnlogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnlogout.Font = new System.Drawing.Font("Nirmala Text", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnlogout.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnlogout.Location = new System.Drawing.Point(0, 683);
+            this.btnlogout.Name = "btnlogout";
+            this.btnlogout.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnlogout.Size = new System.Drawing.Size(247, 39);
+            this.btnlogout.TabIndex = 7;
+            this.btnlogout.Text = "Log Out";
+            this.btnlogout.UseVisualStyleBackColor = false;
+            // 
+            // btnusermanagement
+            // 
+            this.btnusermanagement.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnusermanagement.FlatAppearance.BorderSize = 0;
+            this.btnusermanagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnusermanagement.Font = new System.Drawing.Font("Nirmala Text", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnusermanagement.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnusermanagement.Location = new System.Drawing.Point(0, 430);
+            this.btnusermanagement.Name = "btnusermanagement";
+            this.btnusermanagement.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
+            this.btnusermanagement.Size = new System.Drawing.Size(247, 45);
+            this.btnusermanagement.TabIndex = 6;
+            this.btnusermanagement.Text = "User Management";
+            this.btnusermanagement.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnusermanagement.UseVisualStyleBackColor = true;
+            // 
+            // btnsupplier
+            // 
+            this.btnsupplier.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnsupplier.FlatAppearance.BorderSize = 0;
+            this.btnsupplier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsupplier.Font = new System.Drawing.Font("Nirmala Text", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsupplier.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnsupplier.Location = new System.Drawing.Point(0, 385);
+            this.btnsupplier.Name = "btnsupplier";
+            this.btnsupplier.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
+            this.btnsupplier.Size = new System.Drawing.Size(247, 45);
+            this.btnsupplier.TabIndex = 5;
+            this.btnsupplier.Text = "Suppliers";
+            this.btnsupplier.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsupplier.UseVisualStyleBackColor = true;
+            // 
+            // btninventory
+            // 
+            this.btninventory.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btninventory.FlatAppearance.BorderSize = 0;
+            this.btninventory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btninventory.Font = new System.Drawing.Font("Nirmala Text", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btninventory.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btninventory.Location = new System.Drawing.Point(0, 340);
+            this.btninventory.Name = "btninventory";
+            this.btninventory.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
+            this.btninventory.Size = new System.Drawing.Size(247, 45);
+            this.btninventory.TabIndex = 4;
+            this.btninventory.Text = "Inventory";
+            this.btninventory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btninventory.UseVisualStyleBackColor = true;
+            // 
+            // btnpos
+            // 
+            this.btnpos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnpos.FlatAppearance.BorderSize = 0;
+            this.btnpos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnpos.Font = new System.Drawing.Font("Nirmala Text", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnpos.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnpos.Location = new System.Drawing.Point(0, 295);
+            this.btnpos.Name = "btnpos";
+            this.btnpos.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
+            this.btnpos.Size = new System.Drawing.Size(247, 45);
+            this.btnpos.TabIndex = 3;
+            this.btnpos.Text = "POS";
+            this.btnpos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnpos.UseVisualStyleBackColor = true;
+            this.btnpos.Click += new System.EventHandler(this.btnpos_Click);
+            // 
+            // btnDashboard
+            // 
+            this.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDashboard.FlatAppearance.BorderSize = 0;
+            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashboard.Font = new System.Drawing.Font("Nirmala Text", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnDashboard.Location = new System.Drawing.Point(0, 250);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
+            this.btnDashboard.Size = new System.Drawing.Size(247, 45);
+            this.btnDashboard.TabIndex = 2;
+            this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDashboard.UseVisualStyleBackColor = true;
+            // 
+            // panel5
+            // 
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 199);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(247, 51);
+            this.panel5.TabIndex = 1;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Firebrick;
+            this.panel4.Controls.Add(this.pictureBox1);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(247, 199);
+            this.panel4.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(49, 36);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(145, 128);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Firebrick;
@@ -484,6 +868,36 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1180, 49);
             this.panel2.TabIndex = 0;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(1078, 3);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(44, 43);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 4;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(1043, 14);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(29, 24);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 3;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(1128, 14);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(31, 21);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 2;
+            this.pictureBox7.TabStop = false;
             // 
             // admintxt
             // 
@@ -506,419 +920,6 @@
             this.wlcmtxt.TabIndex = 0;
             this.wlcmtxt.Text = "Welcome:";
             // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Firebrick;
-            this.panel4.Controls.Add(this.pictureBox1);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(247, 199);
-            this.panel4.TabIndex = 0;
-            // 
-            // panel5
-            // 
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 199);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(247, 51);
-            this.panel5.TabIndex = 1;
-            // 
-            // btnDashboard
-            // 
-            this.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDashboard.FlatAppearance.BorderSize = 0;
-            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashboard.Font = new System.Drawing.Font("Nirmala Text", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnDashboard.Location = new System.Drawing.Point(0, 250);
-            this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.btnDashboard.Size = new System.Drawing.Size(247, 45);
-            this.btnDashboard.TabIndex = 2;
-            this.btnDashboard.Text = "Dashboard";
-            this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDashboard.UseVisualStyleBackColor = true;
-            // 
-            // btnpos
-            // 
-            this.btnpos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnpos.FlatAppearance.BorderSize = 0;
-            this.btnpos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnpos.Font = new System.Drawing.Font("Nirmala Text", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnpos.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnpos.Location = new System.Drawing.Point(0, 295);
-            this.btnpos.Name = "btnpos";
-            this.btnpos.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.btnpos.Size = new System.Drawing.Size(247, 45);
-            this.btnpos.TabIndex = 3;
-            this.btnpos.Text = "POS";
-            this.btnpos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnpos.UseVisualStyleBackColor = true;
-            // 
-            // btninventory
-            // 
-            this.btninventory.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btninventory.FlatAppearance.BorderSize = 0;
-            this.btninventory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btninventory.Font = new System.Drawing.Font("Nirmala Text", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btninventory.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btninventory.Location = new System.Drawing.Point(0, 340);
-            this.btninventory.Name = "btninventory";
-            this.btninventory.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.btninventory.Size = new System.Drawing.Size(247, 45);
-            this.btninventory.TabIndex = 4;
-            this.btninventory.Text = "Inventory";
-            this.btninventory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btninventory.UseVisualStyleBackColor = true;
-            // 
-            // btnsupplier
-            // 
-            this.btnsupplier.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnsupplier.FlatAppearance.BorderSize = 0;
-            this.btnsupplier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnsupplier.Font = new System.Drawing.Font("Nirmala Text", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsupplier.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnsupplier.Location = new System.Drawing.Point(0, 385);
-            this.btnsupplier.Name = "btnsupplier";
-            this.btnsupplier.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.btnsupplier.Size = new System.Drawing.Size(247, 45);
-            this.btnsupplier.TabIndex = 5;
-            this.btnsupplier.Text = "Suppliers";
-            this.btnsupplier.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnsupplier.UseVisualStyleBackColor = true;
-            // 
-            // btnusermanagement
-            // 
-            this.btnusermanagement.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnusermanagement.FlatAppearance.BorderSize = 0;
-            this.btnusermanagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnusermanagement.Font = new System.Drawing.Font("Nirmala Text", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnusermanagement.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnusermanagement.Location = new System.Drawing.Point(0, 430);
-            this.btnusermanagement.Name = "btnusermanagement";
-            this.btnusermanagement.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.btnusermanagement.Size = new System.Drawing.Size(247, 45);
-            this.btnusermanagement.TabIndex = 6;
-            this.btnusermanagement.Text = "User Management";
-            this.btnusermanagement.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnusermanagement.UseVisualStyleBackColor = true;
-            // 
-            // btnlogout
-            // 
-            this.btnlogout.BackColor = System.Drawing.Color.Firebrick;
-            this.btnlogout.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnlogout.FlatAppearance.BorderSize = 0;
-            this.btnlogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnlogout.Font = new System.Drawing.Font("Nirmala Text", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnlogout.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnlogout.Location = new System.Drawing.Point(0, 683);
-            this.btnlogout.Name = "btnlogout";
-            this.btnlogout.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnlogout.Size = new System.Drawing.Size(247, 39);
-            this.btnlogout.TabIndex = 7;
-            this.btnlogout.Text = "Log Out";
-            this.btnlogout.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(49, 36);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(145, 128);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(12, 256);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(41, 33);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 8;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(12, 301);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(41, 33);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 9;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(12, 346);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(41, 33);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 10;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(12, 391);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(41, 33);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 11;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(12, 436);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(41, 33);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 12;
-            this.pictureBox6.TabStop = false;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Controls.Add(this.label30);
-            this.panel6.Controls.Add(this.label29);
-            this.panel6.Controls.Add(this.label28);
-            this.panel6.Controls.Add(this.label27);
-            this.panel6.Controls.Add(this.label26);
-            this.panel6.Controls.Add(this.label25);
-            this.panel6.Controls.Add(this.label21);
-            this.panel6.Controls.Add(this.label11);
-            this.panel6.Controls.Add(this.label10);
-            this.panel6.Controls.Add(this.label9);
-            this.panel6.Controls.Add(this.panel7);
-            this.panel6.Location = new System.Drawing.Point(863, 422);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(296, 255);
-            this.panel6.TabIndex = 8;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Myanmar Text", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(18, 55);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(58, 20);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "Products:";
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.Firebrick;
-            this.panel7.Controls.Add(this.label12);
-            this.panel7.Location = new System.Drawing.Point(0, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(296, 38);
-            this.panel7.TabIndex = 0;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Myanmar Text", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(18, 9);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(106, 20);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "LOW STOCK ITEMS";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(157, 121);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(13, 13);
-            this.label13.TabIndex = 12;
-            this.label13.Text = "0";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(157, 83);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(13, 13);
-            this.label14.TabIndex = 11;
-            this.label14.Text = "0";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(157, 103);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(13, 13);
-            this.label15.TabIndex = 10;
-            this.label15.Text = "0";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(157, 63);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(13, 13);
-            this.label16.TabIndex = 9;
-            this.label16.Text = "0";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(145, 82);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(13, 13);
-            this.label22.TabIndex = 11;
-            this.label22.Text = "0";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(145, 102);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(13, 13);
-            this.label23.TabIndex = 10;
-            this.label23.Text = "0";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(145, 62);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(13, 13);
-            this.label24.TabIndex = 9;
-            this.label24.Text = "0";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Myanmar Text", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(185, 55);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(57, 20);
-            this.label10.TabIndex = 2;
-            this.label10.Text = "Quantity:";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Myanmar Text", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(18, 75);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(35, 20);
-            this.label11.TabIndex = 3;
-            this.label11.Text = "Coke";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Myanmar Text", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(18, 95);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(39, 20);
-            this.label21.TabIndex = 4;
-            this.label21.Text = "Bread";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Myanmar Text", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(18, 114);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(74, 20);
-            this.label25.TabIndex = 5;
-            this.label25.Text = "Water Bottle";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Myanmar Text", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(18, 134);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(48, 20);
-            this.label26.TabIndex = 6;
-            this.label26.Text = "Biscuits";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Myanmar Text", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(202, 75);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(15, 20);
-            this.label27.TabIndex = 7;
-            this.label27.Text = "3";
-            this.label27.Click += new System.EventHandler(this.label27_Click);
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Myanmar Text", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(202, 95);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(15, 20);
-            this.label28.TabIndex = 8;
-            this.label28.Text = "6";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Myanmar Text", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(202, 114);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(15, 20);
-            this.label29.TabIndex = 9;
-            this.label29.Text = "2";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Myanmar Text", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(202, 134);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(15, 20);
-            this.label30.TabIndex = 10;
-            this.label30.Text = "4";
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(1128, 14);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(31, 21);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 2;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(1043, 14);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(29, 24);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 3;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(1078, 3);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(44, 43);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 4;
-            this.pictureBox9.TabStop = false;
-            // 
             // dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -930,6 +931,10 @@
             this.Name = "dashboard";
             this.Text = "Dashboard";
             this.panel1.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mychart)).EndInit();
             this.panel18.ResumeLayout(false);
             this.panel18.PerformLayout();
@@ -946,22 +951,18 @@
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             this.panel3.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
 
         }

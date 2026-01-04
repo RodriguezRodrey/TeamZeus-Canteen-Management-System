@@ -12,7 +12,7 @@ namespace CanteenManagementSystem.src.ui
 {
     public partial class dashboard : Form
     {
-        public dashboard()
+        private dashboard()
         {
             InitializeComponent();
         }
@@ -70,6 +70,16 @@ namespace CanteenManagementSystem.src.ui
         private void label27_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnpos_Click(object sender, EventArgs e)
+        {
+            pos dpos = new pos();
+           dpos.Show();
+
+            dpos.ShowDialog();
+
+            this.Hide();
         }
     }
 }
