@@ -49,7 +49,15 @@
     <Compile Include="src\logic\enums\UserRole.cs" />
     <Compile Include="src\logic\models\Admin.cs" />
     <Compile Include="src\logic\models\Cashier.cs" />
+    <Compile Include="src\logic\models\Category.cs" />
     <Compile Include="src\logic\models\InventoryClerk.cs" />
+    <Compile Include="src\logic\models\Product.cs" />
+    <Compile Include="src\logic\models\PurchaseOrder.cs" />
+    <Compile Include="src\logic\models\PurchaseOrderItem.cs" />
+    <Compile Include="src\logic\models\StockMovement.cs" />
+    <Compile Include="src\logic\models\Supplier.cs" />
+    <Compile Include="src\logic\models\Transaction.cs" />
+    <Compile Include="src\logic\models\TransactionItem.cs" />
     <Compile Include="src\logic\models\User.cs" />
     <Compile Include="src\ui\LoginForm.cs">
       <SubType>Form</SubType>
@@ -87,6 +95,8 @@
   <ItemGroup>
     <Folder Include="docs\" />
     <Folder Include="src\data\" />
+    <Folder Include="src\logic\interfaces\" />
+    <Folder Include="src\logic\managers\" />
     <Folder Include="src\logic\services\" />
     <Folder Include="tests\" />
   </ItemGroup>

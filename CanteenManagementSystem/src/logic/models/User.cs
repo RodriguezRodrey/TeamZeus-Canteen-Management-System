@@ -1,21 +1,37 @@
+using System;
+using System.Collections.Generic;
 using CanteenManagementSystem.logic.enums;
 
 namespace CanteenManagementSystem.logic.models
 {
     public abstract class User
     {
-        protected int UserId { get; set; }
-        protected string Username { get; set; }        
-        protected string Password { get; set; }
-        protected string FirstName { get; set; }
-        protected string LastName { get; set; }
-        protected string Email { get; set; }
-        protected string PhoneNumber { get; set; }
-        protected string Address { get; set; }
-        protected UserRole Role { get; set; }
+        public int UserId { get; protected set; }
+        public string Username { get; protected set; }        
+        public string Password { get; protected set; }
+        public string FirstName { get; protected set; }
+        public string LastName { get; protected set; }
+        public string Email { get; protected set; }
+        public string Address { get; protected set; }
+        public string PhoneNumber { get; protected set; }
+        public UserRole Role { get; protected set; }
+        public int CreatedByUserId { get; protected set; }
+        public bool IsActive  { get; protected set; }
+        public DateTime CreatedAt { get; protected set; }
+        
+        public ICollection<Transaction> Transactions { get; set; }
+        public ICollection<PurchaseOrder> CreatedPurchaseOrders { get; set; }
+        public ICollection<PurchaseOrder> ReceivedPurchaseOrders { get; set; }
+        public ICollection<StockMovement> StockMovements { get; set; }
+        
+        protected User() 
+        {
+            IsActive = true;
+            CreatedAt = DateTime.Now;
+        }
         
         protected User(int userId, string username, string firstName, string lastName,
-            string email, string password,string phoneNumber, string address, UserRole role)
+            string email, string password, string address, string phoneNumber, UserRole role)
         {
             UserId = userId;
             Username = username;
@@ -23,31 +39,12 @@ namespace CanteenManagementSystem.logic.models
             LastName = lastName;
             Email = email;
             Password = password;
-            PhoneNumber = phoneNumber;
             Address = address;
+            PhoneNumber = phoneNumber;
             Role = role;
-        }
-        
-        public bool Login(string username, string password)
-        {
-            return Username == username && Password == password;
-        }
-
-        public virtual bool Logout() => true;
-
-        protected void UpdateProfile(string firstName, string lastName,
-            string email, string phoneNumber, string address)
-        {
-            FirstName = firstName;
-            LastName = lastName;
-            Email = email;
-            PhoneNumber = phoneNumber;
-            Address = address;
-        }
-        
-        public string GetFullName()
-        {
-            return $"{LastName}, {FirstName} ";
+            IsActive = true;
+            CreatedAt = DateTime.Now;
+            
         }
     }
 }    
