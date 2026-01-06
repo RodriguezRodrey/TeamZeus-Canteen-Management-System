@@ -644,9 +644,9 @@
             // 
             this.panel11.BackColor = System.Drawing.Color.Silver;
             this.panel11.Controls.Add(this.dshboardtxt);
-            this.panel11.Location = new System.Drawing.Point(253, 66);
+            this.panel11.Location = new System.Drawing.Point(259, 66);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(906, 79);
+            this.panel11.Size = new System.Drawing.Size(900, 79);
             this.panel11.TabIndex = 2;
             // 
             // dshboardtxt

@@ -31,25 +31,25 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.addedit_productdetails = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.addedituser_name = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.addedituser_clearbtn = new System.Windows.Forms.Button();
+            this.addedituser_removebtn = new System.Windows.Forms.Button();
+            this.addedituser_updatebtn = new System.Windows.Forms.Button();
+            this.addedituser_addbtn = new System.Windows.Forms.Button();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.addedituser_updatebtn = new System.Windows.Forms.Button();
-            this.addedituser_addbtn = new System.Windows.Forms.Button();
-            this.addedituser_clearbtn = new System.Windows.Forms.Button();
-            this.addedituser_removebtn = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.addedituser_name = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -87,14 +87,6 @@
             this.panel2.Size = new System.Drawing.Size(986, 339);
             this.panel2.TabIndex = 3;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 50);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(957, 269);
-            this.dataGridView1.TabIndex = 0;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -104,6 +96,14 @@
             this.label1.Size = new System.Drawing.Size(83, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "All Products";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(15, 50);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(957, 269);
+            this.dataGridView1.TabIndex = 0;
             // 
             // panel3
             // 
@@ -129,44 +129,97 @@
             this.panel3.Size = new System.Drawing.Size(986, 254);
             this.panel3.TabIndex = 4;
             // 
-            // textBox1
+            // addedituser_clearbtn
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(182, 31);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(217, 25);
-            this.textBox1.TabIndex = 6;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.addedituser_clearbtn.BackColor = System.Drawing.Color.Firebrick;
+            this.addedituser_clearbtn.FlatAppearance.BorderSize = 0;
+            this.addedituser_clearbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addedituser_clearbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addedituser_clearbtn.ForeColor = System.Drawing.Color.White;
+            this.addedituser_clearbtn.Location = new System.Drawing.Point(627, 188);
+            this.addedituser_clearbtn.Name = "addedituser_clearbtn";
+            this.addedituser_clearbtn.Size = new System.Drawing.Size(99, 45);
+            this.addedituser_clearbtn.TabIndex = 20;
+            this.addedituser_clearbtn.Text = "Clear";
+            this.addedituser_clearbtn.UseVisualStyleBackColor = false;
             // 
-            // addedituser_name
+            // addedituser_removebtn
             // 
-            this.addedituser_name.AutoSize = true;
-            this.addedituser_name.Font = new System.Drawing.Font("Nirmala Text", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addedituser_name.Location = new System.Drawing.Point(98, 31);
-            this.addedituser_name.Name = "addedituser_name";
-            this.addedituser_name.Size = new System.Drawing.Size(78, 17);
-            this.addedituser_name.TabIndex = 5;
-            this.addedituser_name.Text = "Product ID:";
+            this.addedituser_removebtn.BackColor = System.Drawing.Color.Firebrick;
+            this.addedituser_removebtn.FlatAppearance.BorderSize = 0;
+            this.addedituser_removebtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addedituser_removebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addedituser_removebtn.ForeColor = System.Drawing.Color.White;
+            this.addedituser_removebtn.Location = new System.Drawing.Point(494, 188);
+            this.addedituser_removebtn.Name = "addedituser_removebtn";
+            this.addedituser_removebtn.Size = new System.Drawing.Size(99, 45);
+            this.addedituser_removebtn.TabIndex = 19;
+            this.addedituser_removebtn.Text = "Remove";
+            this.addedituser_removebtn.UseVisualStyleBackColor = false;
             // 
-            // textBox2
+            // addedituser_updatebtn
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Location = new System.Drawing.Point(204, 83);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(217, 25);
-            this.textBox2.TabIndex = 8;
+            this.addedituser_updatebtn.BackColor = System.Drawing.Color.Firebrick;
+            this.addedituser_updatebtn.FlatAppearance.BorderSize = 0;
+            this.addedituser_updatebtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addedituser_updatebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addedituser_updatebtn.ForeColor = System.Drawing.Color.White;
+            this.addedituser_updatebtn.Location = new System.Drawing.Point(338, 188);
+            this.addedituser_updatebtn.Name = "addedituser_updatebtn";
+            this.addedituser_updatebtn.Size = new System.Drawing.Size(99, 45);
+            this.addedituser_updatebtn.TabIndex = 18;
+            this.addedituser_updatebtn.Text = "Update";
+            this.addedituser_updatebtn.UseVisualStyleBackColor = false;
             // 
-            // label2
+            // addedituser_addbtn
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Nirmala Text", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(98, 83);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 17);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Product Name:";
+            this.addedituser_addbtn.BackColor = System.Drawing.Color.Firebrick;
+            this.addedituser_addbtn.FlatAppearance.BorderSize = 0;
+            this.addedituser_addbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addedituser_addbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addedituser_addbtn.ForeColor = System.Drawing.Color.White;
+            this.addedituser_addbtn.Location = new System.Drawing.Point(205, 188);
+            this.addedituser_addbtn.Name = "addedituser_addbtn";
+            this.addedituser_addbtn.Size = new System.Drawing.Size(99, 45);
+            this.addedituser_addbtn.TabIndex = 17;
+            this.addedituser_addbtn.Text = "Add";
+            this.addedituser_addbtn.UseVisualStyleBackColor = false;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(627, 126);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(147, 21);
+            this.comboBox2.TabIndex = 16;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Nirmala Text", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(552, 126);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(46, 17);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Status";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(173, 126);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(147, 21);
+            this.comboBox1.TabIndex = 14;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Nirmala Text", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(98, 126);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(68, 17);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Category:";
             // 
             // textBox3
             // 
@@ -206,97 +259,44 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "Price:";
             // 
-            // label5
+            // textBox2
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Nirmala Text", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(98, 126);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 17);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Category:";
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox2.Location = new System.Drawing.Point(204, 83);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(217, 25);
+            this.textBox2.TabIndex = 8;
             // 
-            // comboBox1
+            // label2
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(173, 126);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(147, 21);
-            this.comboBox1.TabIndex = 14;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Nirmala Text", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(98, 83);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(100, 17);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Product Name:";
             // 
-            // comboBox2
+            // textBox1
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(627, 126);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(147, 21);
-            this.comboBox2.TabIndex = 16;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Location = new System.Drawing.Point(182, 31);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(217, 25);
+            this.textBox1.TabIndex = 6;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // label6
+            // addedituser_name
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Nirmala Text", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(552, 126);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(46, 17);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "Status";
-            // 
-            // addedituser_updatebtn
-            // 
-            this.addedituser_updatebtn.BackColor = System.Drawing.Color.Firebrick;
-            this.addedituser_updatebtn.FlatAppearance.BorderSize = 0;
-            this.addedituser_updatebtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addedituser_updatebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addedituser_updatebtn.ForeColor = System.Drawing.Color.White;
-            this.addedituser_updatebtn.Location = new System.Drawing.Point(338, 188);
-            this.addedituser_updatebtn.Name = "addedituser_updatebtn";
-            this.addedituser_updatebtn.Size = new System.Drawing.Size(99, 45);
-            this.addedituser_updatebtn.TabIndex = 18;
-            this.addedituser_updatebtn.Text = "Update";
-            this.addedituser_updatebtn.UseVisualStyleBackColor = false;
-            // 
-            // addedituser_addbtn
-            // 
-            this.addedituser_addbtn.BackColor = System.Drawing.Color.Firebrick;
-            this.addedituser_addbtn.FlatAppearance.BorderSize = 0;
-            this.addedituser_addbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addedituser_addbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addedituser_addbtn.ForeColor = System.Drawing.Color.White;
-            this.addedituser_addbtn.Location = new System.Drawing.Point(205, 188);
-            this.addedituser_addbtn.Name = "addedituser_addbtn";
-            this.addedituser_addbtn.Size = new System.Drawing.Size(99, 45);
-            this.addedituser_addbtn.TabIndex = 17;
-            this.addedituser_addbtn.Text = "Add";
-            this.addedituser_addbtn.UseVisualStyleBackColor = false;
-            // 
-            // addedituser_clearbtn
-            // 
-            this.addedituser_clearbtn.BackColor = System.Drawing.Color.Firebrick;
-            this.addedituser_clearbtn.FlatAppearance.BorderSize = 0;
-            this.addedituser_clearbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addedituser_clearbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addedituser_clearbtn.ForeColor = System.Drawing.Color.White;
-            this.addedituser_clearbtn.Location = new System.Drawing.Point(627, 188);
-            this.addedituser_clearbtn.Name = "addedituser_clearbtn";
-            this.addedituser_clearbtn.Size = new System.Drawing.Size(99, 45);
-            this.addedituser_clearbtn.TabIndex = 20;
-            this.addedituser_clearbtn.Text = "Clear";
-            this.addedituser_clearbtn.UseVisualStyleBackColor = false;
-            // 
-            // addedituser_removebtn
-            // 
-            this.addedituser_removebtn.BackColor = System.Drawing.Color.Firebrick;
-            this.addedituser_removebtn.FlatAppearance.BorderSize = 0;
-            this.addedituser_removebtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addedituser_removebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addedituser_removebtn.ForeColor = System.Drawing.Color.White;
-            this.addedituser_removebtn.Location = new System.Drawing.Point(494, 188);
-            this.addedituser_removebtn.Name = "addedituser_removebtn";
-            this.addedituser_removebtn.Size = new System.Drawing.Size(99, 45);
-            this.addedituser_removebtn.TabIndex = 19;
-            this.addedituser_removebtn.Text = "Remove";
-            this.addedituser_removebtn.UseVisualStyleBackColor = false;
+            this.addedituser_name.AutoSize = true;
+            this.addedituser_name.Font = new System.Drawing.Font("Nirmala Text", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addedituser_name.Location = new System.Drawing.Point(98, 31);
+            this.addedituser_name.Name = "addedituser_name";
+            this.addedituser_name.Size = new System.Drawing.Size(78, 17);
+            this.addedituser_name.TabIndex = 5;
+            this.addedituser_name.Text = "Product ID:";
             // 
             // addedit
             // 
