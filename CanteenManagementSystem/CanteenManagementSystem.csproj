@@ -34,6 +34,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=10.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.10.0.1\lib\net462\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,11 +50,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="src\helpers\SQLServerHelpers.cs" />
     <Compile Include="src\logic\enums\PaymentMethod.cs" />
     <Compile Include="src\logic\enums\PurchaseOrderStatus.cs" />
     <Compile Include="src\logic\enums\StockMovementType.cs" />
     <Compile Include="src\logic\enums\TransactionStatus.cs" />
     <Compile Include="src\logic\enums\UserRole.cs" />
+    <Compile Include="src\logic\interfaces\ICategoryRepository.cs" />
+    <Compile Include="src\logic\interfaces\IProductRepository.cs" />
+    <Compile Include="src\logic\interfaces\IStockMovementRepository.cs" />
+    <Compile Include="src\logic\interfaces\ISupplierRepository.cs" />
+    <Compile Include="src\logic\interfaces\ITransactionItemRepository.cs" />
+    <Compile Include="src\logic\interfaces\ITransactionRepository.cs" />
+    <Compile Include="src\logic\interfaces\IUserRepository.cs" />
     <Compile Include="src\logic\models\Admin.cs" />
     <Compile Include="src\logic\models\Cashier.cs" />
     <Compile Include="src\logic\models\Category.cs" />
@@ -99,7 +111,6 @@
   <ItemGroup>
     <Folder Include="docs\" />
     <Folder Include="src\data\" />
-    <Folder Include="src\logic\interfaces\" />
     <Folder Include="src\logic\managers\" />
     <Folder Include="src\logic\services\" />
     <Folder Include="tests\" />
