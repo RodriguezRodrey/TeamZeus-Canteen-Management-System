@@ -15,7 +15,7 @@ namespace CanteenManagementSystem.logic.models
         public string Address { get; protected set; }
         public string PhoneNumber { get; protected set; }
         public UserRole Role { get; protected set; }
-        public int CreatedByUserId { get; protected set; }
+        public int? CreatedByUserId { get; protected set; }
         public bool IsActive  { get; protected set; }
         public DateTime CreatedAt { get; protected set; }
         
@@ -44,7 +44,16 @@ namespace CanteenManagementSystem.logic.models
             Role = role;
             IsActive = true;
             CreatedAt = DateTime.Now;
-            
+        }
+        
+        public void SetPassword(string password)
+        {
+            Password = password;
+        }
+
+        public bool VerifyPassword(string password)
+        {
+            return Password == password;
         }
     }
 }    

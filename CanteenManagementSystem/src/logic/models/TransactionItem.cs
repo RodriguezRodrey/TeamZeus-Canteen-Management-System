@@ -2,7 +2,7 @@ namespace CanteenManagementSystem.logic.models
 {
     public class TransactionItem
     {
-        public string TransactionItemId { get; set; }
+        public int TransactionItemId { get; set; }
         
         public int TransactionId { get; set; }
         public Transaction Transaction { get; set; }
@@ -13,5 +13,10 @@ namespace CanteenManagementSystem.logic.models
         public int Quantity { get; set; }
         public decimal UnitPrice { get; set; }
         public decimal Subtotal { get; set; }
+        
+        public void CalculateSubtotal()
+        {
+            Subtotal = Quantity * UnitPrice;
+        }
     }
 }

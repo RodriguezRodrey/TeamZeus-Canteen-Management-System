@@ -13,6 +13,12 @@ namespace CanteenManagementSystem.logic.models
         public Product Product { get; set; }
         
         public int Quantity { get; set; }
-        public decimal CostPrice { get; set; }
+        public decimal UnitCostPrice { get; set; }
+        public decimal Subtotal { get; set; } 
+        
+        public void CalculateSubtotal()
+        {
+            Subtotal = Quantity * UnitCostPrice;
+        }
     }
 }

@@ -1,4 +1,5 @@
 using System;
+using CanteenManagementSystem.logic.enums;
 
 namespace CanteenManagementSystem.logic.models
 {
@@ -13,12 +14,17 @@ namespace CanteenManagementSystem.logic.models
         public Supplier Supplier { get; set; }
         
         public int QuantityChanged { get; set; }
-        public string StockMovementType { get; set; }
-        public DateTime StockMovementDate { get; set; }
-        public int ReferenceNumber { get; set; }
+        public StockMovementType MovementType { get; set; }
+        public DateTime MovementDate { get; set; }
+        public string ReferenceNumber { get; set; }
         public string Reason { get; set; }
         
         public int PerformedById { get; set; }
         public User PerformedBy { get; set; }
+        
+        public StockMovement()
+        {
+            MovementDate = DateTime.Now;
+        }
     }
 }

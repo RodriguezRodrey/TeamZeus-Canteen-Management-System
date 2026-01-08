@@ -46,6 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="src\logic\enums\PaymentMethod.cs" />
+    <Compile Include="src\logic\enums\PurchaseOrderStatus.cs" />
+    <Compile Include="src\logic\enums\StockMovementType.cs" />
+    <Compile Include="src\logic\enums\TransactionStatus.cs" />
     <Compile Include="src\logic\enums\UserRole.cs" />
     <Compile Include="src\logic\models\Admin.cs" />
     <Compile Include="src\logic\models\Cashier.cs" />
