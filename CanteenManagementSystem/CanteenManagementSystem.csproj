@@ -67,7 +67,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="src\helpers\SqlServerHelpers.cs" />
     <Compile Include="src\logic\enums\PaymentMethod.cs" />
     <Compile Include="src\logic\enums\PurchaseOrderStatus.cs" />
     <Compile Include="src\logic\enums\StockMovementType.cs" />
@@ -136,6 +135,7 @@
   <ItemGroup>
     <Folder Include="docs\" />
     <Folder Include="src\data\" />
+    <Folder Include="src\helpers\" />
     <Folder Include="tests\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
