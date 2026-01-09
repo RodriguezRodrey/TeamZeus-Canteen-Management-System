@@ -29,188 +29,183 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.report_reports = new System.Windows.Forms.Label();
+            this.receiptpreview_ = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.reportbtn_productlist = new System.Windows.Forms.Button();
-            this.reportbtn_stockbalance = new System.Windows.Forms.Button();
-            this.reportbtn_salesreport = new System.Windows.Forms.Button();
-            this.reportbtn_purchasereport = new System.Windows.Forms.Button();
-            this.reportbtn_supplierlist = new System.Windows.Forms.Button();
-            this.report_startdate = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.report_enddate = new System.Windows.Forms.Label();
-            this.reportbtn_report = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.receiptpreview_reporttype = new System.Windows.Forms.Label();
+            this.receiptpreview_fromdate = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.receiptpreview_filterby = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.receiptpreview_exportpdfbtn = new System.Windows.Forms.Button();
+            this.receiptpreview_generatereportsbtn = new System.Windows.Forms.Button();
+            this.receiptpreview_printbtn = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.usermanagement_userlist = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Firebrick;
-            this.panel1.Controls.Add(this.report_reports);
+            this.panel1.Controls.Add(this.receiptpreview_);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1333, 68);
+            this.panel1.Size = new System.Drawing.Size(705, 68);
             this.panel1.TabIndex = 0;
             // 
-            // report_reports
+            // receiptpreview_
             // 
-            this.report_reports.AutoSize = true;
-            this.report_reports.Font = new System.Drawing.Font("Nirmala Text", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.report_reports.ForeColor = System.Drawing.Color.White;
-            this.report_reports.Location = new System.Drawing.Point(26, 18);
-            this.report_reports.Name = "report_reports";
-            this.report_reports.Size = new System.Drawing.Size(95, 32);
-            this.report_reports.TabIndex = 3;
-            this.report_reports.Text = "Reports";
+            this.receiptpreview_.AutoSize = true;
+            this.receiptpreview_.Font = new System.Drawing.Font("Nirmala Text", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.receiptpreview_.ForeColor = System.Drawing.Color.White;
+            this.receiptpreview_.Location = new System.Drawing.Point(26, 18);
+            this.receiptpreview_.Name = "receiptpreview_";
+            this.receiptpreview_.Size = new System.Drawing.Size(95, 32);
+            this.receiptpreview_.TabIndex = 3;
+            this.receiptpreview_.Text = "Reports";
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.reportbtn_report);
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.report_enddate);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.report_startdate);
-            this.panel2.Controls.Add(this.reportbtn_supplierlist);
-            this.panel2.Controls.Add(this.reportbtn_purchasereport);
-            this.panel2.Controls.Add(this.reportbtn_salesreport);
-            this.panel2.Controls.Add(this.reportbtn_stockbalance);
-            this.panel2.Controls.Add(this.reportbtn_productlist);
-            this.panel2.Location = new System.Drawing.Point(12, 88);
+            this.panel2.Controls.Add(this.usermanagement_userlist);
+            this.panel2.Controls.Add(this.dataGridView1);
+            this.panel2.Controls.Add(this.receiptpreview_printbtn);
+            this.panel2.Controls.Add(this.receiptpreview_exportpdfbtn);
+            this.panel2.Controls.Add(this.receiptpreview_generatereportsbtn);
+            this.panel2.Controls.Add(this.comboBox2);
+            this.panel2.Controls.Add(this.receiptpreview_filterby);
+            this.panel2.Controls.Add(this.dateTimePicker1);
+            this.panel2.Controls.Add(this.receiptpreview_fromdate);
+            this.panel2.Controls.Add(this.comboBox1);
+            this.panel2.Controls.Add(this.receiptpreview_reporttype);
+            this.panel2.Location = new System.Drawing.Point(0, 65);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1309, 533);
+            this.panel2.Size = new System.Drawing.Size(705, 645);
             this.panel2.TabIndex = 1;
             // 
-            // reportbtn_productlist
+            // comboBox1
             // 
-            this.reportbtn_productlist.BackColor = System.Drawing.Color.Firebrick;
-            this.reportbtn_productlist.FlatAppearance.BorderSize = 0;
-            this.reportbtn_productlist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.reportbtn_productlist.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reportbtn_productlist.ForeColor = System.Drawing.Color.White;
-            this.reportbtn_productlist.Location = new System.Drawing.Point(0, 0);
-            this.reportbtn_productlist.Name = "reportbtn_productlist";
-            this.reportbtn_productlist.Size = new System.Drawing.Size(257, 45);
-            this.reportbtn_productlist.TabIndex = 10;
-            this.reportbtn_productlist.Text = "Product List";
-            this.reportbtn_productlist.UseVisualStyleBackColor = false;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(154, 29);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 24;
             // 
-            // reportbtn_stockbalance
+            // receiptpreview_reporttype
             // 
-            this.reportbtn_stockbalance.BackColor = System.Drawing.Color.Firebrick;
-            this.reportbtn_stockbalance.FlatAppearance.BorderSize = 0;
-            this.reportbtn_stockbalance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.reportbtn_stockbalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reportbtn_stockbalance.ForeColor = System.Drawing.Color.White;
-            this.reportbtn_stockbalance.Location = new System.Drawing.Point(263, 0);
-            this.reportbtn_stockbalance.Name = "reportbtn_stockbalance";
-            this.reportbtn_stockbalance.Size = new System.Drawing.Size(257, 45);
-            this.reportbtn_stockbalance.TabIndex = 11;
-            this.reportbtn_stockbalance.Text = "Stock Balance";
-            this.reportbtn_stockbalance.UseVisualStyleBackColor = false;
+            this.receiptpreview_reporttype.AutoSize = true;
+            this.receiptpreview_reporttype.Font = new System.Drawing.Font("Nirmala Text", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.receiptpreview_reporttype.Location = new System.Drawing.Point(50, 30);
+            this.receiptpreview_reporttype.Name = "receiptpreview_reporttype";
+            this.receiptpreview_reporttype.Size = new System.Drawing.Size(98, 20);
+            this.receiptpreview_reporttype.TabIndex = 23;
+            this.receiptpreview_reporttype.Text = "Report Type:";
             // 
-            // reportbtn_salesreport
+            // receiptpreview_fromdate
             // 
-            this.reportbtn_salesreport.BackColor = System.Drawing.Color.Firebrick;
-            this.reportbtn_salesreport.FlatAppearance.BorderSize = 0;
-            this.reportbtn_salesreport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.reportbtn_salesreport.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reportbtn_salesreport.ForeColor = System.Drawing.Color.White;
-            this.reportbtn_salesreport.Location = new System.Drawing.Point(526, 0);
-            this.reportbtn_salesreport.Name = "reportbtn_salesreport";
-            this.reportbtn_salesreport.Size = new System.Drawing.Size(257, 45);
-            this.reportbtn_salesreport.TabIndex = 12;
-            this.reportbtn_salesreport.Text = "Sales Report";
-            this.reportbtn_salesreport.UseVisualStyleBackColor = false;
+            this.receiptpreview_fromdate.AutoSize = true;
+            this.receiptpreview_fromdate.Font = new System.Drawing.Font("Nirmala Text", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.receiptpreview_fromdate.Location = new System.Drawing.Point(50, 64);
+            this.receiptpreview_fromdate.Name = "receiptpreview_fromdate";
+            this.receiptpreview_fromdate.Size = new System.Drawing.Size(118, 20);
+            this.receiptpreview_fromdate.TabIndex = 25;
+            this.receiptpreview_fromdate.Text = "receiptpreview_";
             // 
-            // reportbtn_purchasereport
+            // dateTimePicker1
             // 
-            this.reportbtn_purchasereport.BackColor = System.Drawing.Color.Firebrick;
-            this.reportbtn_purchasereport.FlatAppearance.BorderSize = 0;
-            this.reportbtn_purchasereport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.reportbtn_purchasereport.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reportbtn_purchasereport.ForeColor = System.Drawing.Color.White;
-            this.reportbtn_purchasereport.Location = new System.Drawing.Point(789, 0);
-            this.reportbtn_purchasereport.Name = "reportbtn_purchasereport";
-            this.reportbtn_purchasereport.Size = new System.Drawing.Size(257, 45);
-            this.reportbtn_purchasereport.TabIndex = 13;
-            this.reportbtn_purchasereport.Text = "Purchase Report";
-            this.reportbtn_purchasereport.UseVisualStyleBackColor = false;
+            this.dateTimePicker1.Location = new System.Drawing.Point(154, 64);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(198, 20);
+            this.dateTimePicker1.TabIndex = 26;
             // 
-            // reportbtn_supplierlist
+            // receiptpreview_filterby
             // 
-            this.reportbtn_supplierlist.BackColor = System.Drawing.Color.Firebrick;
-            this.reportbtn_supplierlist.FlatAppearance.BorderSize = 0;
-            this.reportbtn_supplierlist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.reportbtn_supplierlist.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reportbtn_supplierlist.ForeColor = System.Drawing.Color.White;
-            this.reportbtn_supplierlist.Location = new System.Drawing.Point(1052, 0);
-            this.reportbtn_supplierlist.Name = "reportbtn_supplierlist";
-            this.reportbtn_supplierlist.Size = new System.Drawing.Size(257, 45);
-            this.reportbtn_supplierlist.TabIndex = 14;
-            this.reportbtn_supplierlist.Text = "Supplier List";
-            this.reportbtn_supplierlist.UseVisualStyleBackColor = false;
+            this.receiptpreview_filterby.AutoSize = true;
+            this.receiptpreview_filterby.Font = new System.Drawing.Font("Nirmala Text", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.receiptpreview_filterby.Location = new System.Drawing.Point(73, 99);
+            this.receiptpreview_filterby.Name = "receiptpreview_filterby";
+            this.receiptpreview_filterby.Size = new System.Drawing.Size(75, 20);
+            this.receiptpreview_filterby.TabIndex = 27;
+            this.receiptpreview_filterby.Text = "Filter By: ";
             // 
-            // report_startdate
+            // comboBox2
             // 
-            this.report_startdate.AutoSize = true;
-            this.report_startdate.Font = new System.Drawing.Font("Nirmala Text", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.report_startdate.Location = new System.Drawing.Point(67, 137);
-            this.report_startdate.Name = "report_startdate";
-            this.report_startdate.Size = new System.Drawing.Size(80, 20);
-            this.report_startdate.TabIndex = 15;
-            this.report_startdate.Text = "Start Date";
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(154, 98);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.TabIndex = 28;
             // 
-            // textBox1
+            // receiptpreview_exportpdfbtn
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(71, 160);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(132, 28);
-            this.textBox1.TabIndex = 16;
+            this.receiptpreview_exportpdfbtn.BackColor = System.Drawing.Color.Firebrick;
+            this.receiptpreview_exportpdfbtn.FlatAppearance.BorderSize = 0;
+            this.receiptpreview_exportpdfbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.receiptpreview_exportpdfbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.receiptpreview_exportpdfbtn.ForeColor = System.Drawing.Color.White;
+            this.receiptpreview_exportpdfbtn.Location = new System.Drawing.Point(172, 148);
+            this.receiptpreview_exportpdfbtn.Name = "receiptpreview_exportpdfbtn";
+            this.receiptpreview_exportpdfbtn.Size = new System.Drawing.Size(133, 45);
+            this.receiptpreview_exportpdfbtn.TabIndex = 30;
+            this.receiptpreview_exportpdfbtn.Text = "Export PDF";
+            this.receiptpreview_exportpdfbtn.UseVisualStyleBackColor = false;
             // 
-            // textBox2
+            // receiptpreview_generatereportsbtn
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Location = new System.Drawing.Point(71, 240);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(132, 28);
-            this.textBox2.TabIndex = 18;
+            this.receiptpreview_generatereportsbtn.BackColor = System.Drawing.Color.Firebrick;
+            this.receiptpreview_generatereportsbtn.FlatAppearance.BorderSize = 0;
+            this.receiptpreview_generatereportsbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.receiptpreview_generatereportsbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.receiptpreview_generatereportsbtn.ForeColor = System.Drawing.Color.White;
+            this.receiptpreview_generatereportsbtn.Location = new System.Drawing.Point(32, 148);
+            this.receiptpreview_generatereportsbtn.Name = "receiptpreview_generatereportsbtn";
+            this.receiptpreview_generatereportsbtn.Size = new System.Drawing.Size(134, 45);
+            this.receiptpreview_generatereportsbtn.TabIndex = 29;
+            this.receiptpreview_generatereportsbtn.Text = "Generate Reports";
+            this.receiptpreview_generatereportsbtn.UseVisualStyleBackColor = false;
             // 
-            // report_enddate
+            // receiptpreview_printbtn
             // 
-            this.report_enddate.AutoSize = true;
-            this.report_enddate.Font = new System.Drawing.Font("Nirmala Text", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.report_enddate.Location = new System.Drawing.Point(67, 217);
-            this.report_enddate.Name = "report_enddate";
-            this.report_enddate.Size = new System.Drawing.Size(72, 20);
-            this.report_enddate.TabIndex = 17;
-            this.report_enddate.Text = "End Date";
+            this.receiptpreview_printbtn.BackColor = System.Drawing.Color.Firebrick;
+            this.receiptpreview_printbtn.FlatAppearance.BorderSize = 0;
+            this.receiptpreview_printbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.receiptpreview_printbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.receiptpreview_printbtn.ForeColor = System.Drawing.Color.White;
+            this.receiptpreview_printbtn.Location = new System.Drawing.Point(465, 148);
+            this.receiptpreview_printbtn.Name = "receiptpreview_printbtn";
+            this.receiptpreview_printbtn.Size = new System.Drawing.Size(133, 45);
+            this.receiptpreview_printbtn.TabIndex = 31;
+            this.receiptpreview_printbtn.Text = "Print";
+            this.receiptpreview_printbtn.UseVisualStyleBackColor = false;
             // 
-            // reportbtn_report
+            // dataGridView1
             // 
-            this.reportbtn_report.BackColor = System.Drawing.Color.Firebrick;
-            this.reportbtn_report.FlatAppearance.BorderSize = 0;
-            this.reportbtn_report.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.reportbtn_report.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reportbtn_report.ForeColor = System.Drawing.Color.White;
-            this.reportbtn_report.Location = new System.Drawing.Point(71, 298);
-            this.reportbtn_report.Name = "reportbtn_report";
-            this.reportbtn_report.Size = new System.Drawing.Size(116, 45);
-            this.reportbtn_report.TabIndex = 19;
-            this.reportbtn_report.Text = "Report";
-            this.reportbtn_report.UseVisualStyleBackColor = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 238);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(681, 394);
+            this.dataGridView1.TabIndex = 32;
+            // 
+            // usermanagement_userlist
+            // 
+            this.usermanagement_userlist.AutoSize = true;
+            this.usermanagement_userlist.Font = new System.Drawing.Font("Nirmala Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usermanagement_userlist.ForeColor = System.Drawing.Color.Black;
+            this.usermanagement_userlist.Location = new System.Drawing.Point(17, 214);
+            this.usermanagement_userlist.Name = "usermanagement_userlist";
+            this.usermanagement_userlist.Size = new System.Drawing.Size(122, 21);
+            this.usermanagement_userlist.TabIndex = 5;
+            this.usermanagement_userlist.Text = "Report Display";
             // 
             // ViewReports
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1333, 633);
+            this.ClientSize = new System.Drawing.Size(705, 709);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -220,6 +215,7 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -227,17 +223,18 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label report_reports;
+        private System.Windows.Forms.Label receiptpreview_;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label report_startdate;
-        private System.Windows.Forms.Button reportbtn_supplierlist;
-        private System.Windows.Forms.Button reportbtn_purchasereport;
-        private System.Windows.Forms.Button reportbtn_salesreport;
-        private System.Windows.Forms.Button reportbtn_stockbalance;
-        private System.Windows.Forms.Button reportbtn_productlist;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label report_enddate;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button reportbtn_report;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label receiptpreview_filterby;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label receiptpreview_fromdate;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label receiptpreview_reporttype;
+        private System.Windows.Forms.Button receiptpreview_printbtn;
+        private System.Windows.Forms.Button receiptpreview_exportpdfbtn;
+        private System.Windows.Forms.Button receiptpreview_generatereportsbtn;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label usermanagement_userlist;
     }
 }

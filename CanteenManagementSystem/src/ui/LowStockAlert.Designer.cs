@@ -31,16 +31,16 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lowstockalert_ = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.lowstockalert_productname = new System.Windows.Forms.Label();
-            this.lowstockalert_currentstock = new System.Windows.Forms.Label();
-            this.lowstockalert_minimumstock = new System.Windows.Forms.Label();
-            this.lowstockalert_alertstatus = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.lowstockalert_btnreset = new System.Windows.Forms.Button();
             this.lowstockalert_btnsavealert = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lowstockalert_alertstatus = new System.Windows.Forms.Label();
+            this.lowstockalert_minimumstock = new System.Windows.Forms.Label();
+            this.lowstockalert_currentstock = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lowstockalert_productname = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -52,7 +52,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(784, 78);
+            this.panel1.Size = new System.Drawing.Size(604, 78);
             this.panel1.TabIndex = 0;
             // 
             // lowstockalert_
@@ -79,60 +79,42 @@
             this.panel2.Controls.Add(this.lowstockalert_currentstock);
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.lowstockalert_productname);
-            this.panel2.Location = new System.Drawing.Point(12, 84);
+            this.panel2.Location = new System.Drawing.Point(0, 75);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(760, 386);
+            this.panel2.Size = new System.Drawing.Size(772, 395);
             this.panel2.TabIndex = 1;
             // 
-            // textBox1
+            // label5
             // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(222, 58);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(168, 20);
-            this.textBox1.TabIndex = 10;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Nirmala Text", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Red;
+            this.label5.Location = new System.Drawing.Point(213, 224);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(85, 20);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "Low Stock!";
             // 
-            // lowstockalert_productname
+            // label4
             // 
-            this.lowstockalert_productname.AutoSize = true;
-            this.lowstockalert_productname.Font = new System.Drawing.Font("Nirmala Text", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lowstockalert_productname.Location = new System.Drawing.Point(107, 58);
-            this.lowstockalert_productname.Name = "lowstockalert_productname";
-            this.lowstockalert_productname.Size = new System.Drawing.Size(118, 20);
-            this.lowstockalert_productname.TabIndex = 9;
-            this.lowstockalert_productname.Text = "Product Name: ";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Nirmala Text", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Location = new System.Drawing.Point(226, 139);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(18, 20);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "3";
             // 
-            // lowstockalert_currentstock
+            // label9
             // 
-            this.lowstockalert_currentstock.AutoSize = true;
-            this.lowstockalert_currentstock.Font = new System.Drawing.Font("Nirmala Text", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lowstockalert_currentstock.Location = new System.Drawing.Point(107, 101);
-            this.lowstockalert_currentstock.Name = "lowstockalert_currentstock";
-            this.lowstockalert_currentstock.Size = new System.Drawing.Size(109, 20);
-            this.lowstockalert_currentstock.TabIndex = 11;
-            this.lowstockalert_currentstock.Text = "Current Stock:";
-            // 
-            // lowstockalert_minimumstock
-            // 
-            this.lowstockalert_minimumstock.AutoSize = true;
-            this.lowstockalert_minimumstock.Font = new System.Drawing.Font("Nirmala Text", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lowstockalert_minimumstock.Location = new System.Drawing.Point(107, 139);
-            this.lowstockalert_minimumstock.Name = "lowstockalert_minimumstock";
-            this.lowstockalert_minimumstock.Size = new System.Drawing.Size(124, 20);
-            this.lowstockalert_minimumstock.TabIndex = 12;
-            this.lowstockalert_minimumstock.Text = "Minimum Stock:";
-            // 
-            // lowstockalert_alertstatus
-            // 
-            this.lowstockalert_alertstatus.AutoSize = true;
-            this.lowstockalert_alertstatus.Font = new System.Drawing.Font("Nirmala Text", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lowstockalert_alertstatus.Location = new System.Drawing.Point(107, 224);
-            this.lowstockalert_alertstatus.Name = "lowstockalert_alertstatus";
-            this.lowstockalert_alertstatus.Size = new System.Drawing.Size(100, 20);
-            this.lowstockalert_alertstatus.TabIndex = 13;
-            this.lowstockalert_alertstatus.Text = " Alert Status:";
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Nirmala Text", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(222, 101);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(27, 20);
+            this.label9.TabIndex = 16;
+            this.label9.Text = "25";
             // 
             // lowstockalert_btnreset
             // 
@@ -162,42 +144,62 @@
             this.lowstockalert_btnsavealert.Text = "Save Alert";
             this.lowstockalert_btnsavealert.UseVisualStyleBackColor = false;
             // 
-            // label9
+            // lowstockalert_alertstatus
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Nirmala Text", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(222, 101);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(27, 20);
-            this.label9.TabIndex = 16;
-            this.label9.Text = "25";
+            this.lowstockalert_alertstatus.AutoSize = true;
+            this.lowstockalert_alertstatus.Font = new System.Drawing.Font("Nirmala Text", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lowstockalert_alertstatus.Location = new System.Drawing.Point(107, 224);
+            this.lowstockalert_alertstatus.Name = "lowstockalert_alertstatus";
+            this.lowstockalert_alertstatus.Size = new System.Drawing.Size(100, 20);
+            this.lowstockalert_alertstatus.TabIndex = 13;
+            this.lowstockalert_alertstatus.Text = " Alert Status:";
             // 
-            // label4
+            // lowstockalert_minimumstock
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Nirmala Text", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(237, 139);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(18, 20);
-            this.label4.TabIndex = 17;
-            this.label4.Text = "3";
+            this.lowstockalert_minimumstock.AutoSize = true;
+            this.lowstockalert_minimumstock.Font = new System.Drawing.Font("Nirmala Text", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lowstockalert_minimumstock.Location = new System.Drawing.Point(92, 139);
+            this.lowstockalert_minimumstock.Name = "lowstockalert_minimumstock";
+            this.lowstockalert_minimumstock.Size = new System.Drawing.Size(124, 20);
+            this.lowstockalert_minimumstock.TabIndex = 12;
+            this.lowstockalert_minimumstock.Text = "Minimum Stock:";
             // 
-            // label5
+            // lowstockalert_currentstock
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Nirmala Text", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(213, 224);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 20);
-            this.label5.TabIndex = 18;
-            this.label5.Text = "Low Stock!";
+            this.lowstockalert_currentstock.AutoSize = true;
+            this.lowstockalert_currentstock.Font = new System.Drawing.Font("Nirmala Text", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lowstockalert_currentstock.Location = new System.Drawing.Point(107, 101);
+            this.lowstockalert_currentstock.Name = "lowstockalert_currentstock";
+            this.lowstockalert_currentstock.Size = new System.Drawing.Size(109, 20);
+            this.lowstockalert_currentstock.TabIndex = 11;
+            this.lowstockalert_currentstock.Text = "Current Stock:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.White;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Location = new System.Drawing.Point(222, 58);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(168, 20);
+            this.textBox1.TabIndex = 10;
+            // 
+            // lowstockalert_productname
+            // 
+            this.lowstockalert_productname.AutoSize = true;
+            this.lowstockalert_productname.Font = new System.Drawing.Font("Nirmala Text", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lowstockalert_productname.Location = new System.Drawing.Point(107, 58);
+            this.lowstockalert_productname.Name = "lowstockalert_productname";
+            this.lowstockalert_productname.Size = new System.Drawing.Size(118, 20);
+            this.lowstockalert_productname.TabIndex = 9;
+            this.lowstockalert_productname.Text = "Product Name: ";
             // 
             // LowStockAlert
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(784, 482);
+            this.ClientSize = new System.Drawing.Size(604, 469);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

@@ -109,6 +109,12 @@
     <Compile Include="src\ui\ReceiptPreviewt.Designer.cs">
       <DependentUpon>ReceiptPreviewt.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\ui\StockMovement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\ui\StockMovement.Designer.cs">
+      <DependentUpon>StockMovement.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\ui\ViewReports.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="src\ui\ReceiptPreviewt.resx">
       <DependentUpon>ReceiptPreviewt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\ui\StockMovement.resx">
+      <DependentUpon>StockMovement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\ui\ViewReports.resx">
       <DependentUpon>ViewReports.cs</DependentUpon>
