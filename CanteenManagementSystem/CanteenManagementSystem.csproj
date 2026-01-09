@@ -33,8 +33,29 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BCrypt.Net-Next, Version=4.0.3.0, Culture=neutral, PublicKeyToken=1e11be04b6288443, processorArchitecture=MSIL">
+      <HintPath>..\packages\BCrypt.Net-Next.4.0.3\lib\net472\BCrypt.Net-Next.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib" />
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=10.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.10.0.1\lib\net462\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +67,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="src\logic\enums\PaymentMethod.cs" />
+    <Compile Include="src\logic\enums\PurchaseOrderStatus.cs" />
+    <Compile Include="src\logic\enums\StockMovementType.cs" />
+    <Compile Include="src\logic\enums\TransactionStatus.cs" />
+    <Compile Include="src\logic\enums\UserRole.cs" />
+    <Compile Include="src\logic\interfaces\ICategoryRepository.cs" />
+    <Compile Include="src\logic\interfaces\IProductRepository.cs" />
+    <Compile Include="src\logic\interfaces\IStockMovementRepository.cs" />
+    <Compile Include="src\logic\interfaces\ISupplierRepository.cs" />
+    <Compile Include="src\logic\interfaces\ITransactionItemRepository.cs" />
+    <Compile Include="src\logic\interfaces\ITransactionRepository.cs" />
+    <Compile Include="src\logic\interfaces\IUserRepository.cs" />
+    <Compile Include="src\logic\models\Admin.cs" />
+    <Compile Include="src\logic\models\Cashier.cs" />
+    <Compile Include="src\logic\models\Category.cs" />
+    <Compile Include="src\logic\models\InventoryClerk.cs" />
+    <Compile Include="src\logic\models\Product.cs" />
+    <Compile Include="src\logic\models\PurchaseOrder.cs" />
+    <Compile Include="src\logic\models\PurchaseOrderItem.cs" />
+    <Compile Include="src\logic\models\StockMovement.cs" />
+    <Compile Include="src\logic\models\Supplier.cs" />
+    <Compile Include="src\logic\models\Transaction.cs" />
+    <Compile Include="src\logic\models\TransactionItem.cs" />
+    <Compile Include="src\logic\models\User.cs" />
+    <Compile Include="src\logic\services\CategoryManager.cs" />
+    <Compile Include="src\logic\services\InventoryManager.cs" />
+    <Compile Include="src\logic\services\ProductManager.cs" />
+    <Compile Include="src\logic\services\ReportManager.cs" />
+    <Compile Include="src\logic\services\SupplierManager.cs" />
+    <Compile Include="src\logic\services\TransactionManager.cs" />
+    <Compile Include="src\logic\services\UserManager.cs" />
     <Compile Include="src\ui\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +118,7 @@
     <EmbeddedResource Include="src\ui\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -82,7 +135,7 @@
   <ItemGroup>
     <Folder Include="docs\" />
     <Folder Include="src\data\" />
-    <Folder Include="src\logic\" />
+    <Folder Include="src\helpers\" />
     <Folder Include="tests\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
