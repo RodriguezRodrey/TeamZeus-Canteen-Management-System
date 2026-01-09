@@ -67,6 +67,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="src\data\SqlServerCategoryContext.cs" />
+    <Compile Include="src\data\SqlServerProductContext.cs" />
+    <Compile Include="src\data\SqlServerStockMovementContext.cs" />
+    <Compile Include="src\data\SqlServerSupplierContext.cs" />
+    <Compile Include="src\data\SqlServerTransactionContext.cs" />
+    <Compile Include="src\data\SqlServerTransactionItemContext.cs" />
+    <Compile Include="src\data\SqlServerUserContext.cs" />
+    <Compile Include="src\helpers\SqlServerHelpers.cs" />
     <Compile Include="src\logic\enums\PaymentMethod.cs" />
     <Compile Include="src\logic\enums\PurchaseOrderStatus.cs" />
     <Compile Include="src\logic\enums\StockMovementType.cs" />
@@ -134,8 +142,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="docs\" />
-    <Folder Include="src\data\" />
-    <Folder Include="src\helpers\" />
     <Folder Include="tests\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
