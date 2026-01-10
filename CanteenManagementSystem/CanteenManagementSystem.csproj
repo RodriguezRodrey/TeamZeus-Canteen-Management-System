@@ -56,6 +56,7 @@
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -67,6 +68,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ProductManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductManagement.Designer.cs">
+      <DependentUpon>ProductManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchaseorder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchaseorder.Designer.cs">
+      <DependentUpon>Purchaseorder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\ui\AddEditSuppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\ui\AddEditSuppliers.Designer.cs">
+      <DependentUpon>AddEditSuppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\ui\AddEditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\ui\AddEditUser.Designer.cs">
+      <DependentUpon>AddEditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\ui\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\ui\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\data\SqlServerCategoryContext.cs" />
     <Compile Include="src\data\SqlServerProductContext.cs" />
     <Compile Include="src\data\SqlServerStockMovementContext.cs" />
@@ -112,8 +143,59 @@
     <Compile Include="src\ui\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\ui\LowStockAlert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\ui\LowStockAlert.Designer.cs">
+      <DependentUpon>LowStockAlert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\ui\POS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\ui\POS.Designer.cs">
+      <DependentUpon>POS.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\ui\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\ui\AddEditProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\ui\AddEditProducts.Designer.cs">
+      <DependentUpon>AddEditProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\ui\ReceiptPreviewt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\ui\ReceiptPreviewt.Designer.cs">
+      <DependentUpon>ReceiptPreviewt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\ui\StockMovement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\ui\StockMovement.Designer.cs">
+      <DependentUpon>StockMovement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\ui\ViewReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\ui\ViewReports.Designer.cs">
+      <DependentUpon>ViewReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupplierManagement.Designer.cs">
+      <DependentUpon>SupplierManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManagement.Designer.cs">
+      <DependentUpon>UserManagement.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ProductManagement.resx">
+      <DependentUpon>ProductManagement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -123,10 +205,46 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Purchaseorder.resx">
+      <DependentUpon>Purchaseorder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\ui\AddEditSuppliers.resx">
+      <DependentUpon>AddEditSuppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\ui\AddEditUser.resx">
+      <DependentUpon>AddEditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\ui\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="src\ui\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <EmbeddedResource Include="src\ui\LowStockAlert.resx">
+      <DependentUpon>LowStockAlert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\ui\POS.resx">
+      <DependentUpon>POS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\ui\AddEditProducts.resx">
+      <DependentUpon>AddEditProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\ui\ReceiptPreviewt.resx">
+      <DependentUpon>ReceiptPreviewt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\ui\StockMovement.resx">
+      <DependentUpon>StockMovement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\ui\ViewReports.resx">
+      <DependentUpon>ViewReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupplierManagement.resx">
+      <DependentUpon>SupplierManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagement.resx">
+      <DependentUpon>UserManagement.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -142,6 +260,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="docs\" />
+    <Folder Include="src\data\" />
+    <Folder Include="src\logic\models\" />
     <Folder Include="tests\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
